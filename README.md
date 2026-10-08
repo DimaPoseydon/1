@@ -105,4 +105,3 @@ Vite/Webpack (обычно `http://localhost:3000` или `http://localhost:5173
 
 - **Репозиторий:** [github.com/mateusmb/galaxy-chat](https://github.com/mateusmb/galaxy-chat)
 - **Issues и предложения:** [github.com/mateusmb/galaxy-chat/issues](https://github.com/mateusmb/galaxy-chat/issues)
-- **Лицензия:** MIT — см. файл [`LICENSE`](LICENSE)
