@@ -8,10 +8,10 @@
 
 ## Возможности
 
-- Создание собственной «планеты» — отдельной комнаты для общения
+- Создание собственной "планеты" — отдельной комнаты для общения
 - Приглашение друзей в чат по ссылке или коду планеты
-- Обмен сообщениями в реальном времени (WebSocket / Socket.io)
-- Интерактивные 3D-планеты и спрайты на React Three Fiber
+- Обмен сообщениями в реальном времени
+- Интерактивные 3D-планеты и спрайты на React
 - Аутентификация пользователей
 
 ---
@@ -106,6 +106,3 @@ Vite/Webpack (обычно `http://localhost:3000` или `http://localhost:5173
 - **Репозиторий:** [github.com/mateusmb/galaxy-chat](https://github.com/mateusmb/galaxy-chat)
 - **Issues и предложения:** [github.com/mateusmb/galaxy-chat/issues](https://github.com/mateusmb/galaxy-chat/issues)
 - **Лицензия:** MIT — см. файл [`LICENSE`](LICENSE)
-
-Если хотите улучшить проект — создавайте issue, присылайте pull request
-или делайте fork.
