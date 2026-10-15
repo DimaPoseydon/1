@@ -26,7 +26,7 @@
 
 Проверить версии:
 
-```bash
+
 node --version
 npm --version
 
