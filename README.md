@@ -1,77 +1,96 @@
 # Galaxy Chat
 
-A chat app with planets instead of rooms! You can create your planet and invite your friends to chat.
+**Galaxy Chat** - это веб-приложение для обмена сообщениями, в котором вместо обычных комнат
+используются "планеты". Вы создаёте свою планету и приглашаете друзей в чат.
 
-![Galaxy Chat Demo Gif](https://media.giphy.com/media/NNLf24O4d1sA8PTwTE/giphy.gif)
-![Galaxy Chat Demo Screenshot Login](https://i.imgur.com/4FLiOF3.png)
-![Galaxy Chat Demo Screenshot Chat](https://i.imgur.com/5Mnq1wB.png)
 
-## Libs and frameworks
+## Возможности
 
-Made with NodeJs, React Js, TypeScript, Context API and Socket.io. Planets and sprite visuals are made with React Three Fiber.
+- Создание собственной "планеты" — отдельной комнаты для общения
+- Приглашение друзей в чат по ссылке или коду планеты
+- Обмен сообщениями в реальном времени
+- Интерактивные 3D-планеты и спрайты на React
+- Аутентификация пользователей
 
-## Run locally
 
-Clone this repository:
+## Требования
+
+Перед установкой убедитесь, что у вас есть:
+
+- **Node.js** версии 16.x или выше (рекомендуется LTS)
+- **npm** 8.x или выше (или **yarn** 1.22+)
+- **Git**
+- Современный браузер с поддержкой WebGL (Chrome, Firefox, Edge, Safari)
+
+Проверить версии:
 
 ```bash
-git clone https://github.com/mateusmb/gallery.git
+node --version
+npm --version
+```
+Если версии ниже необходимых, то нужно установить свежие.
+
+## Установка
+
+Проект состоит из двух частей: `galaxy-server` (серверная часть) и `galaxy-client`
+(клиентская часть). Их нужно установить и запустить по отдельности.
+
+### 1. Клонирование репозитория
+
+```bash
+git clone https://github.com/mateusmb/galaxy-chat.git
+cd galaxy-chat
 ```
 
-Install a npm stable version. I personally recommend installing with [nvm](https://github.com/nvm-sh/nvm)
-
-### Run server
-
-Navigate to cloned respository and then galaxy-server. Install the dependencies 
+### 2. Запуск сервера
 
 ```bash
+cd galaxy-server
 npm install
+npm run dev
 ```
 
-Or if you are yarn team
+Если вы используете yarn:
 
 ```bash
+cd galaxy-server
 yarn
-```
-
-Start the server
-
-```bash
-npm dev
-```
-
-Or
-
-```bash
 yarn dev
 ```
 
-### Run client
+### 3. Запуск клиента
 
-Navigate to cloned respository and then galaxy-client. Install the dependencies 
+В новом окне терминала:
 
 ```bash
+cd galaxy-client
 npm install
+npm run dev
 ```
 
-Or if you are yarn team
+Или с yarn:
 
 ```bash
+cd galaxy-client
 yarn
-```
-
-Start the server
-
-```bash
-npm dev
-```
-
-Or
-
-```bash
 yarn dev
 ```
 
-## Usage
+После запуска клиент будет доступен по адресу, который выведет
+Vite/Webpack (обычно `http://localhost:3000` или `http://localhost:5173`).
 
-Should be self explanatory. If not, and if you want to make it better, feel free to add an issue, PR and/or fork this project.
+
+## Пример использования
+
+Быстрый гайд - от открытия приложения до отправки первого сообщения:
+
+1. Откройте приложение в браузере по адресу из шага 3.
+2. Зарегистрируйтесь или войдите в существующий аккаунт.
+3. На главном экране нажмите **"Создать планету"** и задайте ей имя.
+4. Скопируйте ссылку-приглашение и отправьте её другу.
+5. Когда друг присоединится к планете, начните переписку.
+
+
+## Ссылка на репозиторий
+
+- **Репозиторий:** [github.com/mateusmb/galaxy-chat](https://github.com/mateusmb/galaxy-chat)
