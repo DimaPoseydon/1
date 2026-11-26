@@ -1,9 +1,6 @@
 # Инвентаризация документации: galaxy-chat
 
 **Репозиторий:** [github.com/DimaPoseydon/1](https://github.com/DimaPoseydon/1)
-**Автор инвентаризации:** Дима Посейдон (DimaPoseydon)
-**Дата:** 25.11.2026
-
 ---
 
 ## 1. Что за проект
