@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useGalaxy } from '../context/GalaxyContext';
 import { PlanetScene } from './PlanetScene';
+import { InvitePanel } from './InvitePanel'; // NEW
 
 export function Chat() {
   const { currentPlanet, messages, sendMessage, leavePlanet, username } = useGalaxy();
@@ -14,11 +15,18 @@ export function Chat() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', maxWidth: 700, margin: '0 auto', padding: 16 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
         <h2>🪐 {currentPlanet.name}</h2>
-        <button onClick={leavePlanet} style={{ padding: '6px 12px', borderRadius: 8, cursor: 'pointer' }}>← Назад</button>
+        <div style={{ display: 'flex', gap: 8 }}>
+          <InvitePanel />{/* NEW */}
+          <button onClick={leavePlanet} style={{ padding: '6px 12px', borderRadius: 8, cursor: 'pointer' }}>
+            ← Назад
+          </button>
+        </div>
       </div>
+
       <PlanetScene color={currentPlanet.color} />
+
       <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: 6, padding: '12px 0' }}>
         {messages.map((m, i) => (
           <div key={i} style={{ alignSelf: m.username === username ? 'flex-end' : 'flex-start', background: m.username === username ? '#2a3b8f' : '#1a1c33', padding: '6px 12px', borderRadius: 10, maxWidth: '70%' }}>
@@ -27,6 +35,7 @@ export function Chat() {
           </div>
         ))}
       </div>
+
       <div style={{ display: 'flex', gap: 8 }}>
         <input
           value={text}
